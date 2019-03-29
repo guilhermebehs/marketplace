@@ -1,0 +1,66 @@
+
+.principal{
+
+     height: 100%;
+	 display: flex;
+	 align-items: flex-start;
+}
+
+.painelInicial, .painelCadastro, .painelEdicao{
+	border-color: black;
+    width:50%; 
+    border-style:solid ;
+   
+}
+
+.camposForm{
+
+  width:50%;
+}
+
+
+.painelCadastro, .painelEdicao{
+   padding-left:10%;
+   margin-left:30%;
+   margin-top:10%;
+   width:30%; 
+}
+
+.buscaGeral{
+	border-color: black;
+    border-style:solid;
+    width:200px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 70;
+    padding:1%;    
+}
+
+.botaoBuscalGeral{
+
+	 width: 60px;
+	 height:30px;
+	 margin:1%;
+}
+
+
+.tableInicial, .tdInicial{
+   border: 1px solid black;
+}
+
+.tableInicial{
+	width:100%;
+}
+
+
+.linhaClicavel:hover {
+	background: grey;
+}
+
+
+.pInicial{
+    
+    width:100%;
+    border: 1px solid black;
+    margin:0px;
+}
