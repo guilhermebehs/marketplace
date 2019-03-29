@@ -10,7 +10,7 @@
         $venda = new Venda();
        do{
           $venda =  $lista[$i];
-          if($venda->getId() == $_POST["id"])     
+          if($venda->getId() == $_GET["id"])     
              break;
           $i++;
        }while(true);

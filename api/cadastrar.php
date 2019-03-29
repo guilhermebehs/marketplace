@@ -32,8 +32,7 @@
       $venda->setNaoRecomendo(0);
       array_push($_SESSION["vendas"], $venda);
       unlink($nomeFinal); 
-      echo $_POST['caracteristicas'];
-      //header('Location: concluido.php');
+      header('Location: concluido.php');
       }
       
   catch(Exception $e)
