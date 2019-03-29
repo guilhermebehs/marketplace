@@ -23,20 +23,16 @@
 
        $venda->setDescricao($_POST["caracteristicas"]);
        $venda->setValor($_POST["valor"]);
-       if(empty($_FILES[ 'imagem' ][ 'name' ]) == 1){
-         $imagem = $_FILES["imagem"];
-         $nomeFinal = time().'.jpg';
-         if(move_uploaded_file($imagem['tmp_name'], $nomeFinal))
-           $tamanhoImg = filesize($nomeFinal); 
-         $mysqlImg = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoImg)); 
-         $venda->setImagem($mysqlImg);
-         unlink($nomeFinal); 
+       if(empty($_FILES[ 'imagem' ][ 'name' ]) != 1){
+         $imagem = file_get_contents($_FILES['imagem']['tmp_name']); 
+         $venda->setImagem($imagem);
+         echo "Entrou aqui";
        }
       
      $lista[$i] = $venda;
      $_SESSION["vendas"] = $lista; 
       
-      header('Location: concluido.php');
+     // header('Location: concluido.php');
 
 
     }

@@ -34,8 +34,8 @@
        	  
 
                   echo "<tr class='linhaClicavel' onclick='redirect(".$venda->getId().")'>"; 
-                   echo '<td class="tdInicial"><img src="data:image/jpeg;base64,'.base64_encode($venda->getImagem() ).'"/></td>';
-                 echo "<td class='pInicial'> <p class='pInicial'><b>Nome: ".$venda->getNome()."</b></p><p class='pInicial'><b>Descrição: ".$venda->getDescricao()."</b></p> <p class='pInicial'><b>Valor(R$): ".$venda->getValor()."</b></p> </td>";
+                   echo '<td  class="tdInicial"><img src="data:image/jpeg;base64,'.base64_encode($venda->getImagem() ).'" width="150" height="200"/></td>';
+                 echo "<td class='pInicial'> <p class='pVenda'><b>Nome: ".$venda->getNome()."</b></p> <p class='pVenda'><b>Valor(R$): ".$venda->getValor()."</b></p><p class='pDescricao'><b>Descrição: ".$venda->getDescricao()."</b></p> </td>";
                  echo "</tr>";
       
 
@@ -49,6 +49,9 @@
  <input  type="button" id="btnNaoRecomendar" value="<?php echo "Não Recomendo (".$venda->getNaoRecomendo().")"; ?>" onclick="naoRecomendar()"/>	
 </div>	
 </div>
+ <?php
+  echo '<img src="data:image/jpeg;base64,'.base64_encode( $venda->getImagem()).'"/>';
+  ?>
 <script type="text/javascript">
   var query = location.search.slice(1);
   var partes = query.split('&');

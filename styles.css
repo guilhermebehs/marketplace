@@ -61,6 +61,32 @@
 .pInicial{
     
     width:100%;
+    height:50%;
+    border: 1px solid black;
+    margin:0px;
+}
+
+.pIndex{
+    
+    width:100%;
+    height:50%;
+    border: 1px solid black;
+    margin:0px;
+}
+
+
+.pVenda{
+    
+    width:100%;
+    height:20%;
+    border: 1px solid black;
+    margin:0px;
+}
+
+.pDescricao{
+    
+    width:100%;
+    height:60%;
     border: 1px solid black;
     margin:0px;
 }

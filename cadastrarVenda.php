@@ -19,7 +19,7 @@
 	       Valor(R$): <br/>
 	       <input class="camposForm"  type="number" id="valor" name="valor"/> <br/>
 	        Foto: <br/>
-	       <input class="camposForm" type="file" name="imagem" id="imagem" accept="image/*" /><br/><br/>
+	       <input class="camposForm" type="file" name="imagem" id="imagem" /><br/><br/>
 	       <input type="button" value="Salvar" onclick="saveVenda()"  />
 	   </form>    
       </div> 
