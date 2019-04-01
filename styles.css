@@ -1,13 +1,21 @@
 
-.principal{
+body{
+    background-color: #ebebeb;
+}
 
-     height: 100%;
+.principal{
+   
+   height: 100%;
 	 display: flex;
 	 align-items: flex-start;
 }
 
+.painelInicial{
+   background-color: white;
+}
+
 .painelInicial, .painelCadastro, .painelEdicao{
-	border-color: black;
+	  border-color: black;
     width:50%; 
     border-style:solid ;
    
@@ -20,6 +28,7 @@
 
 
 .painelCadastro, .painelEdicao{
+   background-color: white;
    padding-left:10%;
    margin-left:30%;
    margin-top:10%;
@@ -27,7 +36,8 @@
 }
 
 .buscaGeral{
-	border-color: black;
+    background-color: white;
+	  border-color: black;
     border-style:solid;
     width:200px;
     height: 90px;
@@ -37,7 +47,6 @@
 }
 
 .botaoBuscalGeral{
-
 	 width: 60px;
 	 height:30px;
 	 margin:1%;
@@ -49,6 +58,7 @@
 }
 
 .tableInicial{
+  background-color: white;
 	width:100%;
 }
 
@@ -67,7 +77,7 @@
 }
 
 .pIndex{
-    
+    font-size: 20px;
     width:100%;
     height:50%;
     border: 1px solid black;
@@ -76,7 +86,7 @@
 
 
 .pVenda{
-    
+    font-size: 20px;
     width:100%;
     height:20%;
     border: 1px solid black;
@@ -84,7 +94,7 @@
 }
 
 .pDescricao{
-    
+    font-size: 20px;
     width:100%;
     height:60%;
     border: 1px solid black;

@@ -49,9 +49,7 @@
  <input  type="button" id="btnNaoRecomendar" value="<?php echo "Não Recomendo (".$venda->getNaoRecomendo().")"; ?>" onclick="naoRecomendar()"/>	
 </div>	
 </div>
- <?php
-  echo '<img src="data:image/jpeg;base64,'.base64_encode( $venda->getImagem()).'"/>';
-  ?>
+
 <script type="text/javascript">
   var query = location.search.slice(1);
   var partes = query.split('&');
