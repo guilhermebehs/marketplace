@@ -37,8 +37,8 @@
                 if($filtro ==null  || (strpos(strtolower($row->getNome()), strtolower($filtro)) !== false)){
 
                   echo "<tr class='linhaClicavel' onclick='redirect(".$row->getId().")'>"; 
-                   echo '<td class="tdInicial"><img src="data:image/jpeg;base64,'.base64_encode($row->getImagem() ).'" width="150" height="200"/></td>';
-                 echo "<td class='pInicial'> <p class='pIndex'><b>Nome: ".$row->getNome()."</b></p> <p class='pIndex'><b>Valor(R$): ".$row->getValor()."</b></p> </td>";
+                   echo '<td class="tdImagem"><img src="data:image/jpeg;base64,'.base64_encode($row->getImagem() ).'" width="150" height="200"/></td>';
+                 echo "<td class='pInicial'> <p class='pIndex'>".$row->getNome()."</p> <p class='pIndex' style='font-size:30px'><b>R$ ".number_format($row->getValor(), 2, ',', '.')."</b></p> </td>";
                  echo "</tr>";
                  } 
                  $i++; 

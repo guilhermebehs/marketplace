@@ -32,7 +32,7 @@
      $lista[$i] = $venda;
      $_SESSION["vendas"] = $lista; 
       
-     // header('Location: concluido.php');
+      header('Location: concluido.php');
 
 
     }

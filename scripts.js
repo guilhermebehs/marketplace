@@ -16,6 +16,14 @@ function redirect(id){
 
 }
 
+
+
+function formatCurrency(valor){
+
+  return valor.toFixed(2);
+
+}
+
 function saveVenda(){
 
  var nome = $("#nome").val();

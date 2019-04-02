@@ -12,13 +12,17 @@ body{
 
 .painelInicial{
    background-color: white;
+   height: 30%;
 }
 
-.painelInicial, .painelCadastro, .painelEdicao{
-	  border-color: black;
-    width:50%; 
-    border-style:solid ;
+ .painelCadastro, .painelEdicao{
+	  box-shadow: 0 3px 6px 6px #d3d3d1;
    
+}
+
+.painelInicial{
+ width:50%; 
+
 }
 
 .camposForm{
@@ -37,8 +41,7 @@ body{
 
 .buscaGeral{
     background-color: white;
-	  border-color: black;
-    border-style:solid;
+	 box-shadow: 0 3px 6px 3px #d3d3d3;
     width:200px;
     height: 90px;
     margin-left: 50px;
@@ -53,13 +56,17 @@ body{
 }
 
 
-.tableInicial, .tdInicial{
-   border: 1px solid black;
-}
+
 
 .tableInicial{
   background-color: white;
 	width:100%;
+}
+
+.linhaClicavel, .linhaNormal {
+  box-shadow: 0 3px 6px 3px #d3d3d1;
+  margin-bottom:10px;
+
 }
 
 
@@ -68,11 +75,13 @@ body{
 }
 
 
+.tdImagem{
+}
+
 .pInicial{
     
     width:100%;
     height:50%;
-    border: 1px solid black;
     margin:0px;
 }
 
@@ -80,7 +89,6 @@ body{
     font-size: 20px;
     width:100%;
     height:50%;
-    border: 1px solid black;
     margin:0px;
 }
 
@@ -89,8 +97,6 @@ body{
     font-size: 20px;
     width:100%;
     height:20%;
-    border: 1px solid black;
-    margin:0px;
 }
 
 .pDescricao{
@@ -99,4 +105,12 @@ body{
     height:60%;
     border: 1px solid black;
     margin:0px;
+}
+
+.painelCaract{
+  background-color: white;
+   box-shadow: 0 3px 6px 3px #d3d3d3;
+   width:100%;
+   height: 100%;  
+
 }
