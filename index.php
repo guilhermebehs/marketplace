@@ -21,7 +21,7 @@
 	  <link rel="stylesheet" type="text/css" href="styles.css">	
 	</head>
 <body>
- <h1>Venda de Produtos Online </h1>	
+ <h1>Venda de Produtos online </h1>	
 
  
  <input style="margin-left: 55%;" type="button" value="Cadastrar Produto" onclick="location.href='cadastrarVenda.php'"/>
